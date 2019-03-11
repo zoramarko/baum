@@ -13,8 +13,9 @@ body {
 	  border: 15px solid #005ff9;
 	  background-color: #314668;
 	padding-bottom: 40px;
-	 }
-
+	 
+	
+}
 .dropbtn {
   color: white;  
   font-size: 16px;
@@ -23,9 +24,10 @@ body {
   width: 200px; 
   padding: 10px;
   background-color: #4c6a9b;
-  margin-top: 40px;
+   margin-top: 40px;
    margin-right: 40px;
    margin-bottom: 0px;
+  
 }
 
 /* Dropdown button on hover & focus */
@@ -42,11 +44,12 @@ body {
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
   display: none;
-  position: absolute;
+   position: absolute;
   background-color: #f1f1f1;
   min-width: 200px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 8;
+ 
 }
 
 /* Links inside the dropdown */
@@ -73,7 +76,7 @@ body {
   width: 200px; 
   padding: 10px;
   background-color: #4c6a9b;
-	margin-top: 40px;
+  margin-top: 40px;
    margin-right: 40px;
    margin-bottom: 0px;
 }
@@ -122,7 +125,7 @@ body {
    width: 200px; 
   padding: 10px;
   background-color: #4c6a9b;
-	margin-top: 40px;
+ margin-top: 40px;
    margin-right: 40px;
    margin-bottom: 0px;
 }
@@ -172,7 +175,7 @@ body {
    width: 200px; 
   padding: 10px;
   background-color: #4c6a9b;
-	margin-top: 40px;
+   margin-top: 40px;
    margin-right: 40px;
    margin-bottom: 0px;
 }
@@ -212,3 +215,4 @@ body {
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show4 {display:block;}
+
