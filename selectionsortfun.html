@@ -1,0 +1,34 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<script>
+document.write("<h1>selectionsort</h1>");
+var zahlen=[];
+	for (var x=1; x<=20;x++) {
+		var zz = Math.round(Math.random()*100);
+		zahlen[zahlen.length]= zz;
+		
+	}
+
+	function selectionSort(zahlen) {
+		for (var i = 0; i < zahlen.length ;i++) {
+			var min=i;
+				for(var k=min; k<zahlen.length;k++){
+				if(zahlen[min]>zahlen[k]){
+				min=k;
+				}
+			}
+			var hilf=zahlen[min];
+			zahlen[min]= zahlen[i];
+			zahlen[i]=hilf;
+			
+		}
+	}
+document.write(zahlen+"<br>");
+selectionSort(zahlen);
+document.write(zahlen);
+</script>
+</head>
+<body>
+</body>
+</html>

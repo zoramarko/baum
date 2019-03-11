@@ -1,0 +1,22 @@
+
+<html>
+<head>
+<title> Lotto</title>
+<meta charset="UTF-8">
+<script>
+var tmp=0;
+var myarray=[0,1,2,3,4,5];
+for (i=1; i<6; i=i+2) {
+tmp= myarray[i-1];
+myarray[i-1]= myarray[i]
+myarray[i]= tmp;
+
+
+}
+alert( myarray)
+</script>
+</head>
+<body>
+
+</body>
+</html>

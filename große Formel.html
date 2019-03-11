@@ -1,0 +1,41 @@
+<html>
+<head> 
+<meta charset="utf-8">
+<title> Name</title>
+<script>
+function kleineFu(){
+var A  = document.getElementById("eingabeA").value;
+A = parseInt(A);
+var B  = document.getElementById("eingabeB").value;
+B = parseInt(B);
+var C  = document.getElementById("eingabeC").value;
+C = parseInt(C);
+var D= (Math.pow(B, 2))-(4*A*C);
+
+
+ if(D < 0){
+var ausgabe = ("x exestiert ned");
+ }
+ if(D == 0){
+ var loesung= -B/(2*A);
+ ausgabe =("x=" +loesung);
+ }
+ if(D > 0){
+ var x1= (-B+Math.sqrt(D))/(2*A);
+ var x2  = (-B-Math.sqrt(D))/(2*A);
+ ausgabe =("x1= "+ x1 + "<br> x2= " + x2);
+ }
+ document.getElementById("ausgabe").innerHTML= ausgabe ;
+
+
+ }
+</script>
+</head>
+<body>
+<h1> ABCFormel</h1>
+<input type="text" id="eingabeA">x²+ <input type="text" id="eingabeB">x +
+<input type="text" id="eingabeC">=0
+<input type="button" value="ist x" onclick="kleineFu()">
+<p id="ausgabe"> </p>
+</body>
+</html>

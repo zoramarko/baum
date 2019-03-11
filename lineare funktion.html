@@ -1,0 +1,50 @@
+<html>
+<head> 
+<meta charset="utf-8">
+<title> Name</title>
+<script>
+function lineareF(){
+var k  = document.getElementById("eingabek").value;
+k = parseInt(k);
+var d  = document.getElementById("eingabed").value;
+d = parseInt(d);
+
+
+
+if(k > 0 ) {
+var ausgabe="Die Funktion ist steigend<br>" ;
+}
+
+if (k < 0 ){
+ausgabe= "Die Funktion ist fallend<br>" ;
+}
+
+if (k==0){
+ausgabe= "Die Funktion ist konstant<br>" ;
+}
+
+if (d>0) {
+ausgabe += "Die Funktion schneidet die y-Achse im positiven y-Bereich";
+}
+
+if (d<0){
+ausgabe += "Die Funktion schneidet die y-Achse im negativen y-Bereich";
+}
+
+if (d==0){
+ausgabe += "Die Funktion geht durch den Punkt (0|0)" ;
+}
+document.getElementById("ausgabe").innerHTML= ausgabe ;
+
+ }
+</script>
+</head>
+<body>
+<p>f(x)=<input type="text" id="eingabek">x +
+<input type="text" id="eingabed"></p>
+
+<p><input type="button" value="Eigenschaften" onclick="lineareF()"></p>
+Eigenschaften:<br>
+<p id="ausgabe"> </p>
+</body>
+</html>

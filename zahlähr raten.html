@@ -1,0 +1,53 @@
+<html>
+<head> 
+<meta charset="utf-8">
+<title> Name</title>
+<script>
+
+	var wert= Math.random()*100+0.5;
+		wert= Math.round(wert);
+		
+	var anzahlVer= 0;
+		
+function raten(){
+	var X  = document.getElementById("eingabeX").value;
+	X = parseInt(X);
+	
+	
+	
+
+	
+		if (X < wert){
+		anzahlVer += 1
+		ausgabetext = (" Zahl ist größer<br>");
+		}
+		if (X > wert) {
+		anzahlVer += 1
+		ausgabetext = ("Zahl ist kleiner<br>")
+		}
+	    if (wert == X) {
+		anzahlVer += 1
+		var ausgabetext = (" Zahl erraten!!!<br>");
+		
+		}
+		
+		
+
+	ausgabetext += ( anzahlVer+ " .Versuche")
+	
+	document.getElementById("ausgabe").innerHTML = ausgabetext;
+
+ }
+</script>
+</head>
+<body>
+<h1> Zahlenraten</h1>
+<p> errate eine zahl zw 1 und 100</p>
+
+<p>
+<input type="text" id="eingabeX">
+<input type="button" value="jetzt spielen" onclick="raten()"></p>
+
+<p id="ausgabe"> </p>
+</body>
+</html>

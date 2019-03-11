@@ -1,0 +1,24 @@
+<html>
+<head> 
+<meta charset="utf-8">
+<title> Name</title>
+<script>
+var grad = prompt(" Geben Sie den Grad ein:");
+// berechnung von BogenMaß
+var bogenmass = grad*Math.PI*2/360;
+
+var anfangsgesch = prompt ("Anfangsgeschwindigkeit in m/s");
+var g = 9.81
+var wurfweite = Math.pow(anfangsgesch,2)* Math.sin(bogenmass*2)/g;
+
+// Runden auf 2 Nachkommastellen(*100/100);
+var gerundet = Math.round(wurfweite*100)/100;
+var ausgabeText= ("Wurfweite= "+gerundet);
+
+alert(ausgabeText);
+</script>
+</head>
+<body>
+<h1> hallo<h1>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<html>
+<head> 
+<meta charset="utf-8">
+<title> Name</title>
+<script>
+function grad(){
+var wert1 = document.getElementById("eingabeGrad").value;
+wert1= parseInt(wert1);
+var ergebnis = wert1*Math.PI*2/360;
+document.getElementById("ausgabe").innerHTML= ergebnis;
+}
+function rad(){
+var wert2 = document.getElementById("eingabeRad").value;
+wert2= parseFloati(wert2);
+var ergebnis2 = wert2*180/Math.PI;
+document.getElementById("ausgabe2").innerHTML= ergebnis2;
+}
+</script>
+</head>
+<body>
+<table >
+<tr>
+<td>Grad</td>
+<td> Rad </td>
+</tr>
+<tr>
+<td>
+<input type="text" id="eingabeGrad">
+</td>
+<td>
+<input type="text" id="eingabeRad">
+</td>
+</tr>
+<tr>
+<td>
+<input type="button" value="in rad" onclick="grad()">
+</td>
+<td>
+<input type="button" value="in grad" onclick="rad()">
+</td>
+</tr>
+</table>
+<p id="ausgabe"> Hier in Grad</p>
+<p id="ausgabe2"> Hier in Rad</p>
+</body>
+</html>

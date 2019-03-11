@@ -1,0 +1,80 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title> Einkaufslist</title>
+<script>
+
+var liste=[]
+function listen() {
+var neu = document.getElementById("eingabe").value;
+liste[liste.length] = neu;//merken!
+ausgabe()
+}
+function ausgabe() {
+var ausgabetext= " Liste: <br>";
+	for(var i = 0; i < liste.length; i++) {
+	ausgabetext+= i+1+". "+liste[i] + "<br>";
+	}
+document.getElementById("ausgabe").innerHTML = ausgabetext;
+}
+	function sortieren() {
+		liste.sort();
+		ausgabe();
+		}
+
+
+		function selectionSort() {
+				for (var i = 0; i < liste.length ;i++) {
+					var min=i;
+						for(var k=min; k<liste.length;k++){
+							if(liste[min]>liste[k]){
+							min=k;
+							}
+					}
+					hilfe(min,i);
+					
+				}
+				ausgabe();
+			}
+			
+		function bubbleSort() {
+		var vertauscht= true;//variable in while muss "true" sein / oder while(vertauscht==false)
+			while (vertauscht) {//" !variable"=variable ist false
+				vertauscht= false;
+					for (i=0; i< liste.length-1; i++){
+					
+						if(liste[i]> liste[i+1]){
+						
+						hilfe(i,i+1);
+						vertauscht= true;
+						}
+					}
+
+				}
+			ausgabe()
+		}
+
+		function shuffleArray() {
+			for (var i = liste.length - 1; i > 0; i--) {
+				var j = Math.floor(Math.random() * (i + 1));
+				hilfe(i,j);
+			}ausgabe()
+		}
+	function hilfe(i,j) {//function name(x,y)-> x,y sind Variablen die man ersätzen kann
+	var help = liste[i];
+	liste[i] = liste[j];
+	liste[j] = help;
+	}
+</script>
+</head>
+<body>
+<h1>Einkaufsliste</h1>
+<input type="text" id="eingabe">
+<input type="button" value="Hinzufügen" onclick="listen()"><br>
+<input type="button" value="sortieren" onclick="sortieren()">
+<input type="button" value="selectionSort" onclick="selectionSort()">
+<input type="button" value="BubbleSort" onclick="bubbleSort()"><br>
+<input type="button" value="mischen" onclick="shuffleArray()"><br>
+<p id="ausgabe"></p>
+</body>
+</html>

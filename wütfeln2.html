@@ -1,0 +1,35 @@
+<html>
+<head> 
+<meta charset="utf-8">
+<title> Name</title>
+<script>
+function wurfeln(){
+var ausgabetext= "Ausgabe=<br>";
+
+var wert= Math.random()*6+0.5;
+wert= Math.round(wert);
+
+var wert2= Math.random()*6+0.5;
+wert2= Math.round(wert2);
+
+var augenzahl= wert+wert2
+if (wert==wert2) {
+ausgabetext += "Du hast einen Pasch gewürfelt<br>";
+
+}
+ausgabetext += wert+" / "+wert2+" <br>Augenzahl = "+augenzahl ;
+document.getElementById("ausgabe").innerHTML = ausgabetext;
+
+ }
+</script>
+</head>
+<body>
+<h1> Würfelsimulation</h1>
+
+
+<p>
+<input type="button" value=" Würfeln" onclick="wurfeln()"></p>
+
+<p id="ausgabe"> </p>
+</body>
+</html>

@@ -1,0 +1,52 @@
+
+ .h1 {
+  font-size: 40;
+  font-family: "Century Gothic";
+  color: dodgerblue ;
+  font-weight: bold;
+  border: 5px dashed #BDBDBD;
+  padding: 5px;
+ width: 800;
+ background-image: url("meer.jpg");
+  }
+
+ .h2 {
+ font-size: 30;
+ color: #A9F5F2;
+ background-color: #EFFBEF;
+ font-weight: bold;
+ border: 5px dotted #BDBDBD;
+ width: 600;
+ }
+ h3 {
+  font-size: 55;
+ color: #819FF7;
+ font-weight: bold;
+ margin-bottom: 5px;
+ }
+ .center {
+ border: 3px dotted #BDBDBD;
+ border-top: hidden;
+ background-color: #EFFBEF;
+ width: 580;
+ margin: auto;
+ padding: 10px;
+ font-size: 20px;
+ }
+ table {
+ border: 5px solid #BDBDBD;
+ width: 60%;
+ border-collapse: collapse;
+ 
+ }
+ td {
+ height: 50px;
+ padding: 25px;
+ font-size: 20px;
+ background-color: #EFFBEF;
+ }
+ 
+ body {
+  background-color: #CEF6CE;
+ }
+ 

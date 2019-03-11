@@ -54,3 +54,20 @@ window.onclick = function(event) {
   }
 }
 
+function myFunction4() {
+  document.getElementById("myDropdown4").classList.toggle("show4");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn4')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content4");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show4')) {
+        openDropdown.classList.remove('show4');
+      }
+    }
+  }
+}
