@@ -16,6 +16,11 @@ body {
 	 
 	
 }
+footer{
+	
+	position:absolute;
+	bottom:0px 
+}
 .dropbtn {
   color: white;  
   font-size: 16px;
