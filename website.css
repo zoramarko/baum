@@ -17,9 +17,10 @@ body {
 	
 }
 footer{
-	
-	position:absolute;
-	bottom:0px 
+	text-decoration: none;
+	float: right;
+	position: absolute;
+	bottom: 0px 
 }
 .dropbtn {
   color: white;  
