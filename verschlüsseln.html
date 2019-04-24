@@ -1,0 +1,58 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<script>
+function geheimCode() {
+var key=parseInt(document.getElementById("key").value);
+var text=document.getElementById("text").value;
+var ergebnis="";
+for (i=0 ; i<=text.length; i++) {
+var zahl= text.charCodeAt(i);
+zahl+=key
+if(zahl-key==122) {
+var code= "a";
+}
+if(zahl-key==90) {
+var code= "A";
+}
+else{
+code= String.fromCharCode(zahl);
+}
+ergebnis +=code
+}
+ 
+document.getElementById("ausgabe").value=ergebnis;
+}
+
+
+function entCode(){
+var key=parseInt(document.getElementById("key").value);
+var text=document.getElementById("ausgabe").value;
+var ergebnis="";
+for (i=0 ; i<=text.length; i++) {
+var zahl= text.charCodeAt(i);
+zahl-=key
+if(zahl+key==97) {
+var code= "z";
+}
+if(zahl+key==65) {
+var code= "Z";
+}
+else{
+code= String.fromCharCode(zahl);
+}
+ergebnis +=code
+}
+
+document.getElementById("text").value=ergebnis;
+}
+</script>
+</head>
+<body>
+Schlüssel:<input type="text" id="key"><br><br>
+<textarea rows="8" cols="50" id="text" placeholder="Text hier tippen..."></textarea><br><br>
+<input type="button" value="verschlüsseln" onclick="geheimCode()">
+<input type="button" value="entschlüsseln" onclick="entCode()"><br><br>
+<textarea rows="8" cols="50" id="ausgabe" placeholder="Text hier verschlüsselt tippen..."></textarea>
+</body>
+</html>
