@@ -1,5 +1,5 @@
 var index = 0;
-var bilder = ["bgl1.jpg","bgl2.jpg","bgl3.jpg","bgl4.jpg","bgl5.jpg","bgl6.jpg","bgl7.jpg"];
+var bilder = ["bgl1.JPG","bgl2.JPG","bgl3.JPG","bgl4.JPG","bgl5.JPG","bgl6.jpg.JPG","bgl7.jpg"];
 
 function nextImage(){
 	index++;
