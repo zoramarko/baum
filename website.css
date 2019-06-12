@@ -3,25 +3,62 @@ h1 {
 	color: #3cf2c7;
 	font-family: Lucida Console;
 	font-size: 600%;
-	margin: 100px;
+	margin: 80px;
+}
+h2 {
+	font-size: 300%;
+	margin: 40px;
 }
 body {
 	
 	background: linear-gradient(180deg, #010847, #aba9f2 );
 }
 .box  {
-	  border: 15px solid #005ff9;
+	  border: 13px solid #005ff9;
 	  background-color: #314668;
 	padding-bottom: 40px;
-	 
+	 margin-bottom: 80px;
 	
 }
-footer{
+ .bottom{
 	text-decoration: none;
 	float: right;
-	position: absolute;
-	bottom: 0px 
+	bottom: 0px ;
+	margin-bottom: 0px;
+	font-size: 20px;
 }
+
+	.button {
+		position: absolute;
+		bottom:-2%;
+		left:27%;
+		color: white;
+		padding: 5px 10px;
+		text-align: center;
+		font-size: 30px;
+		background-color: transparent;
+		border: none;
+	}
+	
+	.buttonRight {
+		position: absolute;
+		bottom:-2%;
+		right:27%;
+		color: white;
+		padding: 5px 10px;
+		text-align: center;
+		font-size: 30px;
+		background-color: transparent;
+		border: none;
+	}
+	
+	img {
+		border: 10px solid  #485468;
+		border-radius: 40px;
+		height: 50%;
+		margin-bottom: 40px;
+	}
+
 .dropbtn {
   color: white;  
   font-size: 16px;
@@ -30,10 +67,9 @@ footer{
   width: 200px; 
   padding: 10px;
   background-color: #4c6a9b;
-   margin-top: 40px;
    margin-right: 40px;
    margin-bottom: 0px;
-  
+    margin-top: 30px;
 }
 
 /* Dropdown button on hover & focus */
@@ -82,9 +118,9 @@ footer{
   width: 200px; 
   padding: 10px;
   background-color: #4c6a9b;
-  margin-top: 40px;
-   margin-right: 40px;
+ margin-right: 40px;
    margin-bottom: 0px;
+       margin-top: 30px;
 }
 
 /* Dropdown button on hover & focus */
@@ -131,9 +167,9 @@ footer{
    width: 200px; 
   padding: 10px;
   background-color: #4c6a9b;
- margin-top: 40px;
-   margin-right: 40px;
+  margin-right: 40px;
    margin-bottom: 0px;
+       margin-top: 30px;
 }
 
 /* Dropdown button on hover & focus */
@@ -181,9 +217,8 @@ footer{
    width: 200px; 
   padding: 10px;
   background-color: #4c6a9b;
-   margin-top: 40px;
-   margin-right: 40px;
    margin-bottom: 0px;
+          margin-top: 30px;
 }
 
 /* Dropdown button on hover & focus */
