@@ -1,3 +1,21 @@
+var index = 0;
+var bilder = ["bg1.jpg", "bg2.jpg", "bg3.jpg", "bg4.jpg", "bg5.jpg", "bg6.jpg", "bg7.jpg"];
+
+function nextImage(){
+	index++;
+	if(index >= bilder.length){
+		index = 0;
+	}
+	document.getElementById("bild").src = bilder[index];
+}
+
+function prevImage(){
+	index--;
+	if(index < 0){
+		index = bilder.length - 1;
+	}
+	document.getElementById("bild").src = bilder[index];
+}
 function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
