@@ -58,7 +58,13 @@ body {
 		height: 50%;
 		margin-bottom: 40px;
 	}
-
+	#unterschrift {
+		color: white;
+		font-size: 30px;
+		margin-top: -100px;
+		margin-bottom:200px;
+	}
+	
 .dropbtn {
   color: white;  
   font-size: 16px;
