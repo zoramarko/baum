@@ -1,12 +1,14 @@
 var index = 0;
 var bilder = ["bgl1.JPG","bgl2.JPG","bgl3.JPG","bgl4.JPG","bgl5.JPG","bgl6.jpg.JPG","bgl7.jpg"];
-
+var unterschrift=["Baum in Puszta","Schloss in Ungarn","Fuschelsee","Meer","Meer2","Blue mountains","Schmetterling"];
 function nextImage(){
+
 	index++;
 	if(index >= bilder.length){
 		index = 0;
 	}
 	document.getElementById("bild").src = bilder[index];
+	document.getElementById("Unterschrift").innerHTML= unterschrift[index];
 }
 
 function prevImage(){
@@ -15,6 +17,7 @@ function prevImage(){
 		index = bilder.length - 1;
 	}
 	document.getElementById("bild").src = bilder[index];
+	document.getElementById("Unterschrift").innerHTML= unterschrift[index];
 }
 function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
