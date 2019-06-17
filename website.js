@@ -8,7 +8,7 @@ function nextImage(){
 		index = 0;
 	}
 	document.getElementById("bild").src = bilder[index];
-	document.getElementById("Unterschrift").innerHTML= unterschrift[index];
+	document.getElementById("unterschrift").innerHTML= unterschrift[index];
 }
 
 function prevImage(){
@@ -17,7 +17,7 @@ function prevImage(){
 		index = bilder.length - 1;
 	}
 	document.getElementById("bild").src = bilder[index];
-	document.getElementById("Unterschrift").innerHTML= unterschrift[index];
+	document.getElementById("unterschrift").innerHTML= unterschrift[index];
 }
 function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
